@@ -1,0 +1,27 @@
+.no-support-message { display:none; }
+.impress-not-supported .no-support-message { display:block; }
+
+/* additional styles just to make things look a bit nicer */
+body { 
+	background:#EBEBEB; 
+	font:16px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	color:#333;
+}
+.step { 
+	width:940px; 
+	margin:0 auto 24px auto; 
+	text-align:center; 
+}
+
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled .step.active { opacity: 1 }
